@@ -1,0 +1,9 @@
+version: "3"
+services:
+  fast-ddns-server:
+    build: .
+    ports:
+      - "127.0.0.1:12003:3000"
+    restart: always
+    volume:
+      - /opt/fast-ddns-server:/usr/src/app/data
